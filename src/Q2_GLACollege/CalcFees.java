@@ -36,7 +36,7 @@ class PrintFees {
             System.out.print("Enter the Fee amount: ");
             fees = sc.nextInt();
             if (fees<50000) {
-                System.out.print("Enter amount more than Rs.50000");
+                System.out.println("Enter amount more than Rs.50000");
             }
             else {
                 flag=0;
@@ -50,7 +50,7 @@ class PrintFees {
                 flag=1;
             }
             else {
-                System.out.print("Enter an amount greater than Rs.10000");
+                System.out.println("Enter an amount greater than Rs.10000");
             }
         }
         CalcFees obj = new CalcFees(fees,fix_deposit);
